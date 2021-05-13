@@ -1,0 +1,10 @@
+/* css파일에서 css파일을 import */
+
+@import url("common.css");
+
+p {
+  color: red;
+}
+h1 {
+  color: aqua;
+}
