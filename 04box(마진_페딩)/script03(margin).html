@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    body {
+      background-image: url(img/img.jpg);
+    }
+
+    p {
+      width: 600px;
+      height: 200px;
+      border: 1px solid #777;
+      background-color: lightskyblue;
+
+      /* margin: 50px; */ /* 전부 다 */
+      /* margin: 20px 10px 20px 10px; */ /* 위 오 아 왼 (시계방향) */
+      /* margin: 20px 10px; */ /* 위아래, 좌우 */
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .ct {
+      /* 많이 사용하는 박스의 중앙정렬 기능, 박스의 크기가 지정되어 있어야 사용 가능 */
+      margin: 0 auto;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <p>
+    마진은 무엇인가?
+    마진은 요소의 바깥 여백
+    즉 테두리와 다른 박스 사이의 여백이다.
+    마진과 마진은 겹쳐진다.
+
+    총 박스의 크기: 가로크기 width(600) + margin(20px) + border(2px)
+  </p>
+
+  <p class="ct">
+    마진은 무엇인가?
+    마진은 요소의 바깥 여백
+    즉 테두리와 다른 박스 사이의 여백이다.
+    마진과 마진은 겹쳐진다.
+  </p>
+
+</body>
+</html>
