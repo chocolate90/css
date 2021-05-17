@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {padding: 0; margin: 0;}
+    section {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+      height: 500px;
+      background-color: lightslategray;
+      
+    }
+    .box {
+      float: left;
+      width: 25.0000%;
+      height: 200px;
+      background-color: lightblue;
+      position: relative;
+    }
+
+    /* box, section에 position: relative를 넣어서 각각확인 (없으면 body기준) */
+    .pos {
+      background-color: lightgreen;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <section>
+    <div class="box">박스1</div>
+    <div class="box">박스1</div>
+    <div class="box">박스1</div>
+    <div class="box">
+      박스1
+      <div class="pos">포지션</div>
+    </div>
+  </section>
+
+</body>
+</html>

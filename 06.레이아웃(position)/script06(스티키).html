@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+        * {margin: 0; padding: 0;}
+    ul, li {list-style: none;}
+    body {
+      height: 2000px; 
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      z-index: 50; /* 포지션이 겹치는 경우  */
+    }
+
+    section {
+      margin-top: 160px;
+    }
+
+    .logo {
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .menu {
+      background-color: black;
+      text-align: center;
+    }
+
+    .menu > li {
+      display: inline-block;
+    }
+
+    .menu > li > a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 20px;
+    }
+
+    .menu > li > a:hover {
+      background-color: #777;
+    }
+
+    .inner1 {
+      background-color: violet;
+      height: 500px;
+    }
+
+    /*
+      sticky - 설정된 영역에 도달하기 전에는 일반적인 형식으로 움직이다가 설정된위치에 닿으면 fixed
+      1. top, bottom, left, right중 한가지 옵션이 반드시 존재해야하고
+      2. 어떤 부모요소든 overflow-hidden이 있으면 동작하지 않는다.
+      3. top 속성에는 스크롤이 이동됬을 때 fixed되는 지점을 기록한다.
+      헤더가 고정이라면 헤더의 높이만큼
+    */
+
+    .inner2 {
+      background-color: yellow;
+      position: sticky;
+      top: 160px;
+      z-index: 100;
+    }
+
+    .inner3 {
+      background-color: turquoise;
+      height: 1500px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/bgimg.png" alt="이미지">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="inner1">내용</div>
+    <div class="inner2">스티키</div>
+    <div class="inner3">내용</div>    
+  </section>
+</body>
+</html>
