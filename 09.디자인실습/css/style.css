@@ -36,6 +36,14 @@ ol {
   list-style: none;
 }
 
+/* 버튼과 input태그의 윤곽변경 */
+/* .btn {
+  border-radius: 0px;
+}
+.form-control {
+  border-radius: 0px;
+} */
+
 /* 헤더 */
 .header_col1 {
   background-color: #eee;

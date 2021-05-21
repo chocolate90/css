@@ -3,6 +3,10 @@ section {
 }
 
 /* 나이키 상품 */
+.prod-list {
+  margin-bottom: 30px;
+}
+
 .prod-list > .prod-color > ul {
   overflow: hidden;
 }
@@ -32,5 +36,12 @@ section {
   width: 100%;
 }
 
-/* 마진을 -값으로 위 */
-/* transition */
+.prod-list > .prod-color {
+  opacity: 0;
+  transition: opacity 2s; /* css속성, 기간, transition, 딜레이 */
+  margin-top: -32px; /* 음수값으로 8컬러 위로 */
+}
+
+.prod-list:hover > .prod-color {
+  opacity: 1;
+}
