@@ -51,3 +51,75 @@
 .btn-right {
   float: right;
 }
+
+.reply-wrap {
+  border: 1px solid #d2d2d2;
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: relative;
+}
+
+.reply-wrap > .reply-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.reply-wrap > .reply-content {
+  padding-left: 60px;
+}
+
+.reply-content > .form-control {
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.reply-btn .form-control {
+  width: 150px;
+}
+
+.reply-btn {
+  overflow: hidden;
+}
+
+.reply-btn > .left {
+  float: left;
+}
+
+.reply-btn > .right {
+  float: right;
+}
+
+.reply-btn > input[type="text"] {
+  margin-bottom: 10px;
+}
+
+/* textarea 트랜지션 */
+
+.reply-content textarea {
+  height: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.reply-content textarea:focus {
+  height: 150px;
+}
+
+/* 답글영역 */
+
+.reply-content strong,
+.reply-content small {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+
+.reply-content a {
+  float: right;
+  text-decoration: none;
+  color: #333;
+}
+
+.reply-content > p {
+  margin: 0;
+}

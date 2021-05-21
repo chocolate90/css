@@ -1,0 +1,6 @@
+.join-form {
+  /* 부트스트랩에서 col클래스가 float을 가지고 있어서 가운데 정렬 불가 */
+  /* 한개의 col 클래스를 가운데 정렬할 때는 float을 제거 */
+  margin: 0 auto;
+  float: none;
+}
