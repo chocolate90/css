@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,11 +20,13 @@
   <link rel="stylesheet" href="css/board.css">
   <link rel="stylesheet" href="css/board_detail.css">
   <link rel="stylesheet" href="css/form_join.css">
+  <link rel="stylesheet" href="css/tab.css">
 
 
 </head>
+
 <body>
-  
+
   <header class="custom_header">
     <nav class="navbar">
       <div class="container">
@@ -80,8 +83,86 @@
     </nav>
   </header>
 
+  <!-- 탭스타일은 bootstrap.js와 jquery가 반드시 필요-->
   <section>
-    
+    <div class="container">
+      <div class="row">
+        <div class="titlebox">
+          탭스타일(전체)
+        </div>
+        <div class="col-xs-12">
+          <ul class="nav nav-tabs tab-basic">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+            <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+              <h3>Menu 3</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 그리드를 줄이고 하나의 탭스타일을 가운데 정렬 -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="titlebox">
+          탭스타일(색상)
+        </div>
+        <div class="col-lg-9 col-md-10 col-sm-12 tab-style">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab1">Home</a></li>
+            <li><a data-toggle="tab" href="#tab2">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#tab3">Menu 2</a></li>
+            <li><a data-toggle="tab" href="#tab4">Menu 3</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="tab1" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+            <div id="tab2" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div id="tab3" class="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam.</p>
+            </div>
+            <div id="tab4" class="tab-pane fade">
+              <h3>Menu 3</h3>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -109,4 +190,5 @@
   </footer>
 
 </body>
+
 </html>

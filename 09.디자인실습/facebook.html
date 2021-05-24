@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/board.css">
   <link rel="stylesheet" href="css/board_detail.css">
+  <link rel="stylesheet" href="css/form_join.css">
+  <link rel="stylesheet" href="css/tab.css">
+  <link rel="stylesheet" href="css/mypage.css">
+  <link rel="stylesheet" href="css/facebook.css">
 
 </head>
 
@@ -82,73 +86,94 @@
 
   <section>
     <div class="container">
-      <h3>상세보기<small>(쿠팡예제)</small></h3>
-      <hr>
       <div class="row">
-        <div class="col-md-6">
-          <div class="detail-img">
-            <img src="img/detail.jpg" alt="이미지">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-info">
-            <p class="detail-title">[게릴라특가] 30일체험가능! 벨라페이스 3컬러 LED마스크 눈마사지 겸용/4단계 시간조절/피부홈케어 +사은품까지!</p>
-            <p class="detail-price">135,000원</p>
-            <p class="detail-delivery">무료배송 <br> 상품별배송 ㅣ 택배배송 ㅣ당일출고, 12시 이전 결제 건까지 해당 (주말, 공휴일 제외)</p>
-          </div>
-          <div class="detail-total">
-            <p class="detail-left">총 상품금액</p>
-            <strong class="detail-right">0원</strong>
-          </div>
-          <div class="detail-order">
-            <button type="button" class="btn btn-default btn-lg btn-left">장바구니</button>
-            <button type="button" class="btn btn-primary btn-lg btn-right">구매하기</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="reply-wrap">
-            <div class="reply-img">
-              <img src="img/profile.png" alt="">
+        <aside class="col-sm-3 aside-facebook">
+          <div>
+            <p><img src="img/profile.png" alt="">홍길동</p>
+            <div>
+              <ul>
+                <li>뉴스피드</li>
+                <li>메신져</li>
+                <li>watch동영상</li>
+              </ul>
             </div>
-            <div class="reply-content"> <!-- bs input -->
-              <textarea class="form-control"></textarea>
-              <div class="reply-btn"> <!-- 버튼영역 -->
-                <div class="left">
-                  <input type="text" class="form-control" placeholder="id">
-                  <input type="password" class="form-control" placeholder="비밀번호">
-                </div>
-                <div class="right">
-                  <button class="btn btn-info">등록하기</button>
-                </div>
+            <div>
+              <p>둘러보기</p>
+            </div>
+            <div>
+              <ul>
+                <li>기부 캠페인</li>
+                <li>페이지</li>
+                <li>그룹</li>
+                <li>이벤트</li>
+                <li>친구리스트</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <div class="col-sm-6 section-facebook">
+          <h4>게시글을 등록하세요</h4>
+          <div class="reply-content">
+            <textarea class="form-control"></textarea>
+            <div class="btn-group">
+              <button type="button" class="right btn btn-info re-left">이미지로드</button>
+              <button type="button" class="right btn btn-info re-right">등록하기</button>
+            </div>
+          </div>
+          <div class="wrap">
+            <div>
+              <div class="reply-img">
+                <img src="img/profile.png" alt="">
+              </div>
+              <div class="reply-text">
+                <p>텍스트</p>
+                <small>21시간</small>
               </div>
             </div>
-          </div>
-
-          <!-- 답글영역 -->
-
-          <div class="reply-wrap">
-            <div class="reply-img">
-              <img src="img/profile.png" alt="">
+            <p class="content">삶이 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다.</p>
+            <div>
+              <img src="img/facebook.jpg" alt="">
             </div>
-            <div class="reply-content">
-              <div class="reply-btn">
-                <strong>honggildong</strong>
-                <small>2019/12/10</small>
-                <a href=""><span class=""></span>수정</a>
-                <a href=""><span class=""></span>삭제</a>
-              </div>
-              <p>댓글영역</p>
+            <div class="like">
+              <img src="img/like.png" width="30px" alt="">
+              <span>522</span>
+            </div>
+            <div class="btn-inner">
+              <a href="">
+                <span>
+                  <i class="glyphicon glyphicon-thumbs-up"></i>
+                  좋아요
+                </span>
+              </a>
+              <a href="">
+                <span>
+                  <i class="glyphicon glyphicon-comment"></i>
+                  댓글달기
+                </span>
+              </a>
+              <a href="">
+                <span>
+                  <i class="glyphicon glyphicon-share-alt"></i>
+                  공유하기
+                </span>
+              </a>
             </div>
           </div>
-
         </div>
+
+        <aside class="col-sm-3 aside-facebook">
+          <div>
+            <p>목록</p>
+            <ul>
+              <li>목록1</li>
+              <li>목록2</li>
+              <li>목록3</li>
+              <li>목록4</li>
+              <li>목록5</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
